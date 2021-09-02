@@ -1,3 +1,5 @@
+// Count the number of nodes in the binary tree
+// Find the sum of all nodes in a binary tree
 #include <bits/stdc++.h>
 using namespace std;
 struct Node
