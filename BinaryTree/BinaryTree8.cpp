@@ -1,3 +1,6 @@
+// Find the height of binary tree
+// In this we will recursive the function first for left side of tree and after that right side of tree
+// At last we will add both with 1 and that 1 is the current node
 #include <bits/stdc++.h>
 using namespace std;
 struct Node
