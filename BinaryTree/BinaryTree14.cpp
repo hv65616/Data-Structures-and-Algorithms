@@ -1,3 +1,7 @@
+// //Lowest Common Ancestor
+// First check whether the root data is equal to n1 and n2 if so then return root and if not so then make call for leftside of root and then rightside of root
+// We will store these call values inside a node pointer
+// After that we will check these leftside and rightside if these both are true then return root otherwise return leftside when leftside is not equal to null and rightside when rightside are not null
 #include <bits/stdc++.h>
 using namespace std;
 struct Node
