@@ -1,3 +1,4 @@
+//Insertion of data or node in BST
 #include <bits/stdc++.h>
 using namespace std;
 struct Node
