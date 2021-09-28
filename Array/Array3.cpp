@@ -1,4 +1,4 @@
-//BINARY SEARCH
+//BUBBLE SORT
 #include <iostream>
 using namespace std;
 int main()
