@@ -26,7 +26,7 @@ int main()
 
     vector<int> ans;
     map<int, int>::iterator it;
-    for (it = mp.begin(); it != mp.end(); it++)
+    for (it = mp.begin(); it != mp.end(); it++) g
     {
         if (it->second != 0)
         {
