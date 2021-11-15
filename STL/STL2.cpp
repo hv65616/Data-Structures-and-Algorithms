@@ -44,7 +44,7 @@ int main()
         {
             int x;
             cin >> x;
-            V[i].push_back(x);
+            V[i].push_back(x); //Pushing elements into a vector array
         }
     }
     for (int i = 0; i < N; i++)
@@ -52,12 +52,12 @@ int main()
         print2(V[i]);
     }
     cout << "Vector Of Vector" << endl;
-    vector<vector<int>> vt;
+    vector<vector<int>> vt; // Creating a vector of vector
     for (int i = 0; i < N; i++)
     {
         int x;
         cin >> x;
-        vector<int> vt1;
+        vector<int> vt1; //This another vector is for the vector of vector
         for (int j = 0; j < x; j++)
         {
             int a;
