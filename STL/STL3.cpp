@@ -7,7 +7,7 @@ int main()
     vector<int>::iterator it; //Declaration  of iterator of vector type
     for (it = vt.begin(); it != vt.end(); it++)
     {
-        cout << *it << " "; //Printing of values 
+        cout << *it << " "; //Printing of values
     }
     cout << endl;
     vector<pair<int, int>> vp = {{1, 2}, {3, 4}, {5, 6}};
@@ -15,6 +15,21 @@ int main()
     for (it_vp = vp.begin(); it_vp != vp.end(); it_vp++)
     {
         cout << (*it_vp).first << " " << (*it_vp).second << endl; //Printing of first and second value of pair stored in vector
+    }
+    for (int value : vt) //Another way of iterating in vector by declaring a variable value which store the copy of values of vector vt
+    {
+        cout << value << " ";
+    }
+    cout << endl;
+    for (pair<int, int> p : vp) //Another way of iterating in pair stored inside vector
+    {
+        cout << p.first << " ";
+    }
+    cout << endl;
+    for (auto &value : vt) //Using auto keyword 
+    {
+        value++;
+        cout << value << " ";
     }
     return 0;
 }
