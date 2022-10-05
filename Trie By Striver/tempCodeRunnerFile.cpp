@@ -1,0 +1,1 @@
+links[ch - 'a'] != NULL
