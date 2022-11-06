@@ -1,5 +1,6 @@
 // Maximum Sum Of Non Adjacent Elements
-// Leetcode- 198(House Robber)
+// Leetcode- 198(House Robber
+// GFG - Stickle Thief
 #include <bits/stdc++.h>
 using namespace std;
 // 1. Recursive Approach
