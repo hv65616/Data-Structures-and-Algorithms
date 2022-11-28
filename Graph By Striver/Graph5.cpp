@@ -16,7 +16,7 @@ bool cycleCheck(int i, int n, vector<int> &vis, vector<int> adj[])
             if (vis[it] != 1)
             {
                 vis[it] = 1;
-                q.push({it, par});
+                q.push({it, node});
             }
             else if (it != par)
             {
