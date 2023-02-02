@@ -58,7 +58,7 @@ bool check2(int i, vector<int> &vt, int sum, vector<vector<int>> &temp)
 bool issubset2(vector<int> &vt, int sum)
 {
     int n = vt.size();
-    vector<vector<int>> temp(n, vector<int>(n, -1));
+    vector<vector<int>> temp(1001, vector<int>(1001, -1));
     return check2(n - 1, vt, sum, temp);
 }
 int main()
