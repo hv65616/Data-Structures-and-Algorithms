@@ -61,6 +61,32 @@ bool issubset2(vector<int> &vt, int sum)
     vector<vector<int>> temp(1001, vector<int>(1001, -1));
     return check2(n - 1, vt, sum, temp);
 }
+
+// Method - 3: Tabulation
+bool issubset3(vector<int> &vt, int sum)
+{
+    int n = vt.size();
+    vector<vector<bool>> temp(1001, vector<bool>(1001, -1));
+    for (int i = 0; i < n; i++)
+    {
+        temp[i][0] = true;
+    }
+    temp[0][vt[0]] = true;
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = 1; j <= sum; j++)
+        {
+            bool p = false;
+            if (sum >= vt[i])
+            {
+                p = temp[i - 1][sum - vt[i]];
+            }
+            bool np = temp[i - 1][sum];
+            temp[i][sum] = p || np;
+        }
+    }
+    return temp[n - 1][sum];
+}
 int main()
 {
     vector<int> vt = {2, 3, 1, 1};
@@ -70,6 +96,10 @@ int main()
     else
         cout << "NO" << endl;
     if (issubset2(vt, sum))
+        cout << "YES" << endl;
+    else
+        cout << "NO" << endl;
+    if (issubset3(vt, sum))
         cout << "YES" << endl;
     else
         cout << "NO" << endl;
